@@ -1,0 +1,77 @@
+@import "vars.scss";
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bgcolor;
+
+    &__logo {
+        padding: 0 0 0 10px;
+        margin: 5px 0;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    &__contacts {
+        padding: 0 15px 0 0;
+        margin: 5px 0;
+    }
+
+    &__contacts_tel {
+        display: flex;
+        align-items: center;
+
+        &>a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__contacts_message {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media ($media_lg) {
+    .header__contacts {
+        padding: 0;
+    }
+
+    .header__logo {
+        order: 1;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .navbar {
+        order: 3;
+    }
+
+    .header__contacts {
+        order: 2;
+    }
+}
+
+@media ($media_md) {
+
+    .header {
+
+        &__logo {
+
+            padding: 0;
+            img {
+                width: 70px;
+            }
+        }
+    }
+
+}

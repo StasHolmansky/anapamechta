@@ -1,0 +1,153 @@
+@import "vars.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, serif;
+  background: $white;
+  max-width: $max_width;
+  min-width: $min_width;
+  height: 100%;
+  margin: 0 auto;
+  font-size: $font_size;
+  color: $color_main;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: rgb(255, 144, 54);
+  text-shadow: 1px 1px 1px $hshadow;
+}
+
+h3 {
+  color: rgb(235, 143, 57);
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main {
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__contents {
+      width: 100%;
+      background-color: $bgcolor;
+      display: flex;
+      justify-content: center;
+
+      .about {
+        width: 90%;
+        padding: 40px;
+      }
+
+      .price {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .about h2,
+      .price h2 {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .about p,
+      .price p {
+        padding: 5px 0;
+      }
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__wrap {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  .item {
+    width: 400px;
+    min-width: 210px;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 5px rgba($item_shadow, 0.2);
+    padding: 15px;
+    margin: 30px;
+    background-color: $item_color h2 {
+      text-align: center;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    li {
+      list-style: disc;
+      margin-left: 25px;
+      padding: 5px 0;
+    }
+
+    li::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media ($media_lg) {
+  body {
+    font-size: $font_size_lg;
+  }
+
+  main {
+    justify-content: center;
+  }
+}
+
+@media ($media_md) {
+  body {
+    font-size: $font_size_md;
+  }
+
+  .wrapper {
+    .item {
+      width: auto;
+    }
+
+    .main__contents {
+      .about,
+      .price {
+        width: 100%;
+        padding: 25px 10px 25px 10px;
+      }
+    }
+  }
+}

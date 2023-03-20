@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Гостевой дом "Мечта"</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon_io/site.webmanifest" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="логотип" />
+        </div>
+        <nav class="navbar">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="#information">Информация</a></li>
+              <li><a href="#contacts">Наши контакты</a></li>
+              <li><a href="#sales">Акции</a></li>
+              <li><a href="#rules">Правила проживания</a></li>
+              <li><a href="#price">Номера и цены</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__contacts">
+          <div class="header__contacts_tel">
+            <a href="tel:+79002565886">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#phone"></use>
+              </svg>
+              8 (900) 256-58-86</a
+            >
+          </div>
+          <div class="header__contacts_message">
+            <a href="https://vk.com/gd.mechta.anapa" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="https://ok.ru/profile/570520235097" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#ok"></use>
+              </svg>
+            </a>
+            <a href="http://t.me/+79002565886" target="_blank">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="popup" id="popup"></div>
+
+      <div class="slider">
+        <div class="slider__title">
+          <h1 class="slider__title_name">Гостевой дом "Мечта"</h1>
+          <div class="slider__title_adress">
+            Россия, Анапа, ул. Самбурова, 104а
+          </div>
+        </div>
+
+        <div class="slider__slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slider__slide slider__first">
+            <img src="img/carousel1.jpg" alt="слайд" />
+          </div>
+          <div class="slider__slide">
+            <img src="img/carousel2.jpg" alt="слайд" />
+          </div>
+          <div class="slider__slide">
+            <img src="img/carousel3.jpg" alt="слайд" />
+          </div>
+          <div class="slider__slide">
+            <img src="img/carousel4.jpg" alt="слайд" />
+          </div>
+
+          <div class="slider__navigation_auto">
+            <div class="slider__auto-btn1"></div>
+            <div class="slider__auto-btn2"></div>
+            <div class="slider__auto-btn3"></div>
+            <div class="slider__auto-btn4"></div>
+          </div>
+        </div>
+
+        <div class="slider__navigation_manual">
+          <label for="radio1" class="slider__manual-btn"></label>
+          <label for="radio2" class="slider__manual-btn"></label>
+          <label for="radio3" class="slider__manual-btn"></label>
+          <label for="radio4" class="slider__manual-btn"></label>
+        </div>
+      </div>
+
+      <main class="main">
+        <div class="main__contents">
+          <div class="about">
+            <h2 id="information">Дорогие гости!</h2>
+
+            <h3>Приглашаем вас на отдых в наш уютный гостевой дом "Мечта".</h3>
+
+            <p>
+              Для проживания вам предоставляются номера категорий:<br />
+              Стандарт и Стандарт+ разной комплектации, а так же имеются
+              дополнительные места.
+            </p>
+            <p>
+              Мы находимся в самом центре города курорта Анапа, в 10 минутах
+              ходьбы от песчаного пляжа "Санта-Фе", аквапарка "Золотой Пляж",
+              парка аттракционов "Солнечный Остров" и детского парка открытого
+              совсем недавно. А так же недалеко от автовокзала, Сбербанка,
+              центрального рынка и достопримечательностей города курорта Анапа.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__items">
+          <div class="contacts item">
+            <h2 id="contacts">Наши контакты</h2>
+            <p>
+              353440, Краснодарский край <br />
+              Анапа, улица Самбурова, 104А
+            </p>
+            <span class="ymaps-geolink">44.890291, 37.317203</span>
+            <div class="footer__contacts_phone">
+              <a href="tel:+79002565886">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#phone"></use>
+                </svg>
+                8 (900) 256-58-86
+              </a>
+            </div>
+            <div class="message">
+              <h3>Мы в соцсетях</h3>
+              <div class="message__wrap">
+                <a href="https://vk.com/gd.mechta.anapa" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a href="https://ok.ru/profile/570520235097" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+                <a href="http://t.me/+79002565886" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sales item">
+            <h2 id="sales">Акции</h2>
+            <ul>
+              <li>Скидка 10% на проживание от 15 дней</li>
+              <li>
+                Бесплатный трансфер от и до ЖД вокзала при заселении от 7ми
+                суток
+              </li>
+              <li>
+                Бесплатно проживание детей до 5ти лет включительно не занимающих
+                отдельного места
+              </li>
+              <li>Дневной/Ночной тариф заселения(не полные сутки)</li>
+            </ul>
+          </div>
+          <div class="rules item">
+            <h2 id="rules">Правила проживания</h2>
+            <ul>
+              <li>Заезд в 14:00 выезд в 12:00</li>
+              <li>
+                Для заселения потребуется паспорт, для детей свидетельство о
+                рождении
+              </li>
+              <li>Курение строго в отведенных местах</li>
+              <li>Домашние животные только по согласованию и не более 5кг</li>
+              <li>Тихий час с 23:00 до 7:00</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main__contents">
+          <div class="price">
+            <div class="price__title">
+              <h2 id="price">Номера и цены</h2>
+            </div>
+            <div class="price__items">
+              <div class="price__item">
+                <div class="price__item_content">
+                  <h3>2х местный «Стандарт»</h3>
+                  <h4>с двумя раздельными кроватями цена за номер</h4>
+
+                  <div class="table">
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Май</div>
+                        <div class="line"></div>
+                        <div class="coast">600 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июнь</div>
+                        <div class="line"></div>
+                        <div class="coast">1400 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июль</div>
+                        <div class="line"></div>
+                        <div class="coast">1900 руб.</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Август</div>
+                        <div class="line"></div>
+                        <div class="coast">1900 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Сентябрь</div>
+                        <div class="line"></div>
+                        <div class="coast">1400 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price__item_photo">
+                  <div class="slider_room">
+                    <div class="slider_room__line">
+                      <img src="img/rooms/2beds/1.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/2.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/3.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/4.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/5.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/6.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/7.jpg" alt="номер" />
+                      <img src="img/rooms/2beds/8.jpg" alt="номер" />
+                    </div>
+                  </div>
+
+                  <button class="button slider_room__prev">&lt;</button>
+                  <button class="button slider_room__next">&gt;</button>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="price__item_content">
+                  <h3>2х местный «Стандарт»</h3>
+                  <h4>с 2х спальной кроватью</h4>
+                  <div class="table">
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Май</div>
+                        <div class="line"></div>
+                        <div class="coast">600 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июнь</div>
+                        <div class="line"></div>
+                        <div class="coast">1400 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июль</div>
+                        <div class="line"></div>
+                        <div class="coast">1900 руб.</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Август</div>
+                        <div class="line"></div>
+                        <div class="coast">1900 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Сентябрь</div>
+                        <div class="line"></div>
+                        <div class="coast">1400 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price__item_photo">
+                  <div class="slider_room1">
+                    <div class="slider_room1__line">
+                      <img src="img/rooms/1bed/1.jpg" alt="номер" />
+                      <img src="img/rooms/1bed/2.jpg" alt="номер" />
+                      <img src="img/rooms/1bed/3.jpg" alt="номер" />
+                      <img src="img/rooms/1bed/4.jpg" alt="номер" />
+                      <img src="img/rooms/1bed/5.jpg" alt="номер" />
+                      <img src="img/rooms/1bed/6.jpg" alt="номер" />
+                      <!-- <img src="img/rooms/1bed/7.jpg" alt="номер" /> -->
+                      <img src="img/rooms/1bed/8.jpg" alt="номер" />
+                    </div>
+                  </div>
+
+                  <button class="button slider_room1__prev">&lt;</button>
+                  <button class="button slider_room1__next">&gt;</button>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="price__item_content">
+                  <h3>3х местный «Стандарт»</h3>
+                  <h4>с тремя раздельными кроватями</h4>
+                  <div class="table">
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Май</div>
+                        <div class="line"></div>
+                        <div class="coast">1050 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июнь</div>
+                        <div class="line"></div>
+                        <div class="coast">1800 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июль</div>
+                        <div class="line"></div>
+                        <div class="coast">2850 руб.</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Август</div>
+                        <div class="line"></div>
+                        <div class="coast">2850 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Сентябрь</div>
+                        <div class="line"></div>
+                        <div class="coast">2250 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price__item_photo">
+                  <div class="slider_room2">
+                    <div class="slider_room2__line">
+                      <img src="img/rooms/3beds/1.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/2.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/3.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/4.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/6.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/7.jpg" alt="номер" />
+                      <img src="img/rooms/3beds/8.jpg" alt="номер" />
+                    </div>
+                  </div>
+
+                  <button class="button slider_room2__prev">&lt;</button>
+                  <button class="button slider_room2__next">&gt;</button>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="price__item_content">
+                  <h3>«Семейный +»</h3>
+                  <div class="table">
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Май</div>
+                        <div class="line"></div>
+                        <div class="coast">600 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июнь</div>
+                        <div class="line"></div>
+                        <div class="coast">1400 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Июль</div>
+                        <div class="line"></div>
+                        <div class="coast">2500 руб.</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="month">Август</div>
+                        <div class="line"></div>
+                        <div class="coast">2500 руб.</div>
+                      </div>
+                      <div class="row">
+                        <div class="month">Сентябрь</div>
+                        <div class="line"></div>
+                        <div class="coast">1600 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price__item_photo">
+                  <div class="slider_room3">
+                    <div class="slider_room3__line">
+                      <img src="img/rooms/family/1.jpg" alt="номер" />
+                      <img src="img/rooms/family/2.jpg" alt="номер" />
+                      <img src="img/rooms/family/3.jpg" alt="номер" />
+                      <img src="img/rooms/family/4.jpg" alt="номер" />
+                      <img src="img/rooms/family/5.jpg" alt="номер" />
+                      <img src="img/rooms/family/6.jpg" alt="номер" />
+                      <img src="img/rooms/family/7.jpg" alt="номер" />
+                      <img src="img/rooms/family/8.jpg" alt="номер" />
+                    </div>
+                  </div>
+
+                  <button class="button slider_room3__prev">&lt;</button>
+                  <button class="button slider_room3__next">&gt;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__items">
+          <div class="appliances item">
+            <h4>
+              В каждом номере есть все необходимое для комфортного проживания
+            </h4>
+            <ul>
+              <li>Кондиционер</li>
+              <li>Холодильник</li>
+              <li>Телевизор</li>
+              <li>Wi-Fi</li>
+              <li>Сан узел с душевой зоной</li>
+            </ul>
+          </div>
+          <div class="household item">
+            <h4>Для бытовых нужд имеются</h4>
+            <ul>
+              <li>стиральная машина</li>
+              <li>сушилки для белья</li>
+              <li>гладильные принадлежности</li>
+            </ul>
+          </div>
+          <div class="territory item">
+            <h4>На территории гостевого дома есть</h4>
+            <ul>
+              <li>2 кухни для самостоятельного приготовления пищи</li>
+              <li>крытая столовая зона</li>
+              <li>мангальная зона</li>
+              <li>место для курения</li>
+              <li>зона отдыха</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__contacts">
+          <h4 class="footer__title">Наши контакты</h4>
+          <p>
+            353440, Краснодарский край <br />
+            Анапа, улица Самбурова, 104А
+          </p>
+          <p>Координаты: 44.890291, 37.317203</p>
+          <div class="footer__contacts_phone">
+            <a href="tel:+79002565886">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#phone"></use>
+              </svg>
+              8 (900) 256-58-86</a
+            >
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__links">
+            <h4 class="footer__title">Разделы</h4>
+            <ul class="footer__links_menu">
+              <li><a href="#information">Информация</a></li>
+              <li><a href="#contacts">Наши контакты</a></li>
+              <li><a href="#sales">Акции</a></li>
+              <li><a href="#rules">Правила проживания</a></li>
+              <li><a href="#price">Номера и цены</a></li>
+            </ul>
+          </div>
+          <div class="footer__message">
+            <h4 class="footer__title">Мы в соцсетях</h4>
+            <div class="footer__message_items">
+              <a href="https://vk.com/gd.mechta.anapa" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="https://ok.ru/profile/570520235097" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#ok"></use>
+                </svg>
+              </a>
+              <a href="http://t.me/+79002565886" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+    <script src="js/script.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=6599a686-382e-41bd-8ef8-eb2dfa49c650&lang=ru_RU&load=Geolink"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

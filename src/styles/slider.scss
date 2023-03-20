@@ -1,0 +1,19 @@
+@import 'vars.scss';
+
+.slider_room,
+.slider_room1,
+.slider_room2,
+.slider_room3 {
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.slider_room__line,
+.slider_room1__line,
+.slider_room2__line,
+.slider_room3__line {
+    display: flex;
+    transition: all ease 1s;
+}

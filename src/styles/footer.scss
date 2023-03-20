@@ -1,0 +1,149 @@
+@import "vars.scss";
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 14px;
+  background-color: $bgcolor_footer;
+  color: $footer_text;
+  padding: 20px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $footer_text;
+
+    &:hover {
+      color: $link_hover;
+      transition: 0.15s;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__contacts {
+    width: auto;
+  }
+
+  &__contacts_phone {
+    display: flex;
+    align-items: center;
+    & > a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links_menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding-bottom: 4px;
+      display: block;
+      float: left;
+      width: 49%;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    width: 150px !important;
+  }
+
+  &__message_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & > a {
+      padding: 0 15px;
+    }
+
+    & > a:first-child {
+      padding: 0 15px 0 0;
+    }
+  }
+}
+
+.message__item1,
+.message__item2,
+.message__item3 {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.message__item1 {
+  background-image: linear-gradient(
+      to top,
+      rgba($bgcolor_footer, 0.5),
+      rgba($bgcolor_footer, 0.5)
+    ),
+    url(../../img/icons/VK_white.png);
+}
+
+.message__item2 {
+  background-image: linear-gradient(
+      to top,
+      rgba($bgcolor_footer, 0.5),
+      rgba($bgcolor_footer, 0.5)
+    ),
+    url(../../img/icons/Ok_white.png);
+}
+
+.message__item3 {
+  background-image: linear-gradient(
+      to top,
+      rgba($bgcolor_footer, 0.5),
+      rgba($bgcolor_footer, 0.5)
+    ),
+    url(../../img/icons/Telegram_white.png);
+}
+
+@media ($media_lg) {
+  .footer {
+    &__contacts {
+      width: 51%;
+    }
+
+    &__right {
+      flex-direction: column;
+      width: 51%;
+      max-width: 300px;
+    }
+
+    &__contacts {
+      padding: 5px 0;
+      max-width: 300px;
+    }
+
+    &__message {
+      width: fit-content;
+      padding: 5px 0;
+    }
+  }
+}
+
+@media ($media_md) {
+  .footer {
+    &__contacts,
+    &__right {
+      min-width: 250px;
+      align-items: center;
+    }
+  }
+}

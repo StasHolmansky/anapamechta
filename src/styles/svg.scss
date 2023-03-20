@@ -1,0 +1,39 @@
+@import 'vars.scss';
+
+.header,
+.main {
+    svg {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        fill: $color_main;
+    }
+
+    svg:hover {
+        fill: $link_hover;
+        transition: 0.15s;
+    }
+
+    @media ($media_md) {
+        svg {
+            width: 25px;
+            height: 25px;
+            padding: 3px;
+        }
+    }
+}
+
+.footer {
+    svg {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        fill: $footer_text;
+    }
+
+
+    svg:hover {
+        fill: $link_hover;
+        transition: 0.15s;
+    }
+}
